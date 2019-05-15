@@ -1,0 +1,24 @@
+﻿<Window x:Class="FlorexFlowersTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:dg="http://schemas.microsoft.com/wpf/2008/toolkit"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlorexFlowersTest"
+        mc:Ignorable="d"
+        Title="Flowers Test" Height="500" Width="800" MinWidth="800" MinHeight="500" MaxHeight="500" MaxWidth="800" Name="mw">
+    <Grid>
+        <Canvas Margin="10,0,-10,0">
+            <Label Height="40" Foreground="BurlyWood" FontSize="17" Canvas.Top="10" Canvas.Left="305">Please enter your name</Label>
+            <TextBox Height="25" Width="150" Name="text" Canvas.Top="50" Canvas.Left="320"></TextBox>
+            <Button Height="20" Width="100"  Name="but" Canvas.Top="85" Canvas.Left="345" Background="lightslategray" Foreground="BurlyWood" Click="ShowWelcomeMessage">Submit</Button>
+
+           
+            <TextBlock TextWrapping="WrapWithOverflow" Name="WelcomeText" FontSize="20" Canvas.Top="137" Canvas.Left="270" Width="250" Visibility="Collapsed" Height="Auto"></TextBlock>
+            <Button Click="StartQuiz" Height="20" Width="200" HorizontalContentAlignment="Center" Canvas.Top="398" Canvas.Left="300" Background="lightslategray" Visibility="Hidden" Name="StartTest">Begin Quiz</Button>
+            <!--<RadioButton Height="20" Width="100" Canvas.Top="300" Checked="RadioButtonChecked">qwert</RadioButton>
+            <RadioButton Height="20" Width="100" Canvas.Top="350" Checked="RadioButtonChecked">asdfg</RadioButton>
+            <RadioButton Height="20" Width="100" Canvas.Top="400" Checked="RadioButtonChecked">zxcvb</RadioButton>-->
+        </Canvas>
+    </Grid>
+</Window>
